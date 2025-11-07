@@ -1,7 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Flame, Heart, Award } from "lucide-react";
-
 const About = () => {
   const features = [
     {
@@ -37,7 +36,6 @@ const About = () => {
             We believe that every burger tells a story, and we're here to make yours unforgettable.
           </p>
         </div>
-
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           {features.map((feature, index) => (
             <Card 
@@ -59,7 +57,6 @@ const About = () => {
             </Card>
           ))}
         </div>
-
         <div className="bg-gradient-primary rounded-2xl p-8 sm:p-12 text-white text-center">
           <h3 className="text-2xl sm:text-3xl font-bold mb-4">
             Join Our Burger Revolution
