@@ -10,7 +10,7 @@ const Menu = () => {
   const menuItems = [
     {
       id: "classic",
-      name: "The Classic",
+      name: "Beef Burger",
       description: "Juicy beef patty, crisp lettuce, fresh tomato, pickles, and our  sauce on a toasted bun.",
       price: "RS.450.00",
       image: classicBurger,
@@ -20,16 +20,16 @@ const Menu = () => {
     {
       id: "bbq",
       name: "BBQ Bacon Deluxe",
-      description: "Smoky BBQ sauce, crispy bacon, onion rings, melted cheddar, and caramelized onions.",
-      price: "RS.500.00",
+      description: "beef patty topped with crispy bacon, caramelized onions, tangy BBQ sauce, and melted cheddar on a brioche bun.",
+      price: "RS.550.00",
       image: bbqBurger,
       popular: false,
       category: "Beef"
     },
     {
       id: "veggie",
-      name: "Garden Fresh Veggie",
-      description: "House-made veggie patty, sprouts, cucumber, and herb aioli on whole grain bun.",
+      name: "Fresh Veggie",
+      description: "sprouts, tomato, and herb aioli on a whole grain bun.",
       price: "RS.350.00",
       image: veggieBurger,
       popular: false,

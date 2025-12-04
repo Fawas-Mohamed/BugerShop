@@ -14,10 +14,10 @@ const MenuItems = () => {
 
   const menuItems = {
     classic: {
-      name: "The Classic",
-      price: 14.99,
+      name: "Beef Burger",
+      price: 450,
       image: classicBurger,
-      description: "Our signature beef patty with crisp lettuce, ripe tomatoes, pickles, and our special sauce on a toasted brioche bun.",
+      description: "Our signature beef patty with crisp lettuce, ripe tomatoes, pickles, and our special sauce on a toasted bun.",
       category: "Classic",
       prepTime: "8-12 mins",
       servings: "1 person",
@@ -32,9 +32,9 @@ const MenuItems = () => {
     },
     bbq: {
       name: "BBQ Bacon Deluxe",
-      price: 17.99,
+      price: 550,
       image: bbqBurger,
-      description: "Premium beef patty topped with crispy bacon, caramelized onions, tangy BBQ sauce, and melted cheddar on a brioche bun.",
+      description: "beef patty topped with crispy bacon, caramelized onions, tangy BBQ sauce, and melted cheddar on a brioche bun.",
       category: "Premium",
       prepTime: "10-15 mins",
       servings: "1 person",
@@ -48,10 +48,10 @@ const MenuItems = () => {
       }
     },
     veggie: {
-      name: "Garden Fresh Veggie",
-      price: 13.99,
+      name: "Fresh Veggie",
+      price: 350,
       image: veggieBurger,
-      description: "House-made plant-based patty with avocado, sprouts, tomato, and herb aioli on a whole grain bun.",
+      description: "sprouts, tomato, and herb aioli on a whole grain bun.",
       category: "Vegetarian",
       prepTime: "6-10 mins",
       servings: "1 person",
@@ -90,7 +90,6 @@ const MenuItems = () => {
     <div className="min-h-screen">
       <Navigation />
       <main className="pt-16">
-        {/* Hero Section */}
         <section className="relative py-16 bg-gradient-to-br from-background to-muted">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -122,7 +121,7 @@ const MenuItems = () => {
                 </div>
                 <div className="flex items-center gap-4">
                   <span className="text-3xl font-bold text-primary">
-                    ${item.price}
+                    RS.{item.price}
                   </span>
                   <Button size="lg" className="bg-gradient-primary hover:shadow-warm">
                     Add to Cart
@@ -140,11 +139,9 @@ const MenuItems = () => {
           </div>
         </section>
 
-        {/* Details Section */}
         <section className="py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid md:grid-cols-2 gap-12">
-              {/* Ingredients */}
               <Card>
                 <CardHeader>
                   <CardTitle>Ingredients</CardTitle>
@@ -161,7 +158,6 @@ const MenuItems = () => {
                 </CardContent>
               </Card>
 
-              {/* Nutrition Facts */}
               <Card>
                 <CardHeader>
                   <CardTitle>Nutrition Facts</CardTitle>
